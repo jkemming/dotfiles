@@ -21,6 +21,7 @@ zinit snippet OMZP::git
 
 ## Aliases
 alias ll='ls -lah --color'
+alias keexp='eval $(/usr/local/bin/keexp "${HOME}/Nextcloud/KeePass/Credentials.kdbx" "${HOME}/Nextcloud/keexp_config.json")'
 
 ## History
 HISTSIZE='5000'
