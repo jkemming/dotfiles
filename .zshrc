@@ -13,8 +13,13 @@ source "${ZINIT_HOME}/zinit.zsh"
 ## Key bindings
 bindkey -e
 
-## Suggestions
-zinit light zsh-users/zsh-autosuggestions
+## Syntax highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
+# Don't highlight copy-pasted text
+zle_highlight=('paste:none')
+
+## Auto completion
+zinit light marlonrichert/zsh-autocomplete
 
 ## Snippets
 zinit snippet OMZP::git
@@ -34,21 +39,3 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt SHARE_HISTORY
-
-## Completion
-# Match case-insensitive
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-# Color directories etc. properly
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-autoload -Uz compinit && compinit
-
-## Syntax highlighting
-# Must be at the end, see https://github.com/zsh-users/zsh-syntax-highlighting?tab=readme-ov-file#why-must-zsh-syntax-highlightingzsh-be-sourced-at-the-end-of-the-zshrc-file
-zinit light zsh-users/zsh-syntax-highlighting
-
-## History search
-# Must be after syntax highlighting, see https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#usage
-zinit light zsh-users/zsh-history-substring-search
-zinit ice wait atload'_history_substring_search_config'
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
