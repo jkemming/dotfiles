@@ -1,4 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = """
+$directory$git_branch$git_status$git_state$cmd_duration
+$character"""
+
 [package]
 disabled = true
