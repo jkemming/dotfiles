@@ -9,8 +9,8 @@ enable_transience
 set -g fish_greeting ''
 
 # Environment variables
-set -x EDITOR 'nano'
-set -x VISUAL 'nano'
+set -gx EDITOR 'nano'
+set -gx VISUAL 'nano'
 
 # Abbreviations
 function multicd
