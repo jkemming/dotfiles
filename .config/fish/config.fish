@@ -8,6 +8,10 @@ enable_transience
 # Configuration overrides
 set -g fish_greeting ''
 
+# Environment variables
+set -x EDITOR 'nano'
+set -x VISUAL 'nano'
+
 # Abbreviations
 function multicd
   echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
