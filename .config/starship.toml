@@ -4,5 +4,6 @@ format = """
 $directory$git_branch$git_status$git_state$cmd_duration
 $character"""
 
-[package]
-disabled = true
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
