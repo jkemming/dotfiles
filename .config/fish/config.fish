@@ -1,5 +1,9 @@
+# mise-en-place
 mise activate fish | source
+
+# Starship
 starship init fish | source
+enable_transience
 
 # Configuration overrides
 set -g fish_greeting ''
