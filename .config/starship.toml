@@ -1,12 +1,16 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$directory$git_branch$git_status$git_state$cmd_duration
+$directory$git_branch$git_status$git_state$cmd_duration$fill
 $status$character"""
 
 [character]
 success_symbol = '[➜](bold green) '
 error_symbol = '[✗](bold red) '
+
+[fill]
+symbol = '·'
+style = '#808080'
 
 [status]
 disabled = false
