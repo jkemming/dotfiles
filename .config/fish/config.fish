@@ -31,6 +31,7 @@ abbr -a gco git checkout
 abbr -a gd git diff
 abbr -a gds git diff --staged
 abbr -a gf git fetch
+abbr -a gl git pull
 abbr -a gp git push
 abbr -a gst git status
 abbr -a gsw git switch
