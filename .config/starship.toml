@@ -12,6 +12,9 @@ error_symbol = '[✗](bold red) '
 symbol = '·'
 style = '#808080'
 
+[git_status]
+stashed = ''
+
 [status]
 disabled = false
 format = "[$symbol$status]($style) "
