@@ -36,3 +36,7 @@ abbr -a gp git push
 abbr -a gst git status
 abbr -a gsw git switch
 abbr -a l ls -lah
+abbr -a tf terraform
+abbr -a tfa terraform apply
+abbr -a tfi terraform init
+abbr -a tfp terraform plan
