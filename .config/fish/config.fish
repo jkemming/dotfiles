@@ -1,21 +1,27 @@
-# mise-en-place
+## mise-en-place
 mise activate fish | source
 
-# Starship
+## Starship
 function starship_transient_prompt_func
   starship module character
 end
 starship init fish | source
 enable_transience
 
-# Configuration overrides
+## Configuration overrides
 set -g fish_greeting ''
 
-# Environment variables
+## Environment variables
 set -gx EDITOR 'nano'
 set -gx VISUAL 'nano'
 
-# Abbreviations
+## Key bindings
+# Only execute command if it isn't empty - prevents issue where prompt isn't cleared in transient mode if command is empty
+bind \r 'if test -n (commandline); transient_execute; end'
+# Make `ctrl+c` clear the input - prevents issue where the input along with the prompt wouldn't be cleared and instead a new prompt created
+bind \cc 'commandline ""'
+
+## Abbreviations
 function multicd
   echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
 end
