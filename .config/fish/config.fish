@@ -17,7 +17,7 @@ set -gx VISUAL 'nano'
 
 ## Key bindings
 # Only execute command if it isn't empty - prevents issue where prompt isn't cleared in transient mode if command is empty
-bind \r 'if test -n (commandline); transient_execute; end'
+bind \r 'if test -n "(commandline)"; transient_execute; end'
 # Make `ctrl+c` clear the input - prevents issue where the input along with the prompt wouldn't be cleared and instead a new prompt created
 bind \cc 'commandline ""'
 
