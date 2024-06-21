@@ -15,9 +15,17 @@ set -g fish_greeting ''
 set -gx EDITOR 'nano'
 set -gx VISUAL 'nano'
 
+function transient_execute_if_not_empty
+  set -l command (commandline)
+  if test -n "$command"
+    transient_execute
+  end
+end
+
 ## Key bindings
 # Only execute command if it isn't empty - prevents issue where prompt isn't cleared in transient mode if command is empty
-bind \r 'if test -n "(commandline)"; transient_execute; end'
+bind \r 'transient_execute_if_not_empty'
+bind \n 'transient_execute_if_not_empty'
 # Make `ctrl+c` clear the input - prevents issue where the input along with the prompt wouldn't be cleared and instead a new prompt created
 bind \cc 'commandline ""'
 
