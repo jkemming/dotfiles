@@ -8,12 +8,19 @@ $status$character"""
 success_symbol = '[➜](bold green) '
 error_symbol = '[✗](bold red) '
 
+[cmd_duration]
+format = '[·](#808080) [  $duration]($style) '
+
 [fill]
 symbol = '·'
 style = '#808080'
 
+[git_branch]
+format = '[·](#808080) [$symbol$branch(:$remote_branch)]($style) '
+
 [git_status]
 stashed = ''
+style = 'bold yellow'
 
 [status]
 disabled = false
