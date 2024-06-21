@@ -26,6 +26,6 @@ abbr --add multicd --regex '^\.\.+$' --function multicd
 
 # Allow repeating the last command with `!!`
 function last_history_item
-    echo $history[1]
+  echo $history[1]
 end
 abbr -a !! --position anywhere --function last_history_item
