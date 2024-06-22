@@ -1,5 +1,6 @@
 # Requirements
 
+* [Alacritty](https://github.com/alacritty/alacritty)
 * [fish](https://fishshell.com/)
 * [GNU Stow](https://www.gnu.org/software/stow/)
 * [just](https://github.com/casey/just)
@@ -10,9 +11,5 @@
 
 # Setup
 
-1. Configure your terminal
-	* Use fish as shell
-	* Use installed Nerd Font
-	* For KDE Konsole: Uncheck "Appearance" → "Draw intense colors in bold font"
-2. Navigate to the repository and run `just install`
-3. Run `mise install`
+1. Navigate to the repository and run `just install`
+2. Run `mise install`

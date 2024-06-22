@@ -1,0 +1,11 @@
+shell = "fish"
+
+[window]
+option_as_alt = "both"
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
