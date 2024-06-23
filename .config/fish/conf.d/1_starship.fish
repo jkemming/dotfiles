@@ -19,4 +19,8 @@ bind \r 'transient_execute_if_not_empty'
 bind \n 'transient_execute_if_not_empty'
 ## Make `ctrl+c` clear the input. Prevents issue where the input along with the prompt wouldn't be cleared and instead
 ## a new prompt created
-bind \cc 'commandline ""'
+function cancel_and_repaint
+  commandline ""
+  commandline -f repaint
+end
+bind \cc 'cancel_and_repaint'
