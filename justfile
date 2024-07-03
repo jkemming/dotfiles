@@ -10,7 +10,11 @@ prune:
   #!/usr/bin/env fish
   set broken_symlinks (find -L "$HOME" -type l)
   for broken_symlink in $broken_symlinks
-    echo "Delete broken symlink: $broken_symlink"
+    set target (readlink -f "$broken_symlink")
+    if not string match -q '{{justfile_directory()}}/*' "$target"
+      continue
+    end
+    echo "Delete broken symlink: $broken_symlink ➜ $target"
     read -P '[y/n]: ' confirm_delete
     if test "$confirm_delete" = "y"
       rm "$broken_symlink"
