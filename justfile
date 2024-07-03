@@ -8,7 +8,7 @@ uninstall:
 
 prune:
   #!/usr/bin/env fish
-  set broken_symlinks (find -L "$HOME" -type l)
+  set broken_symlinks (find -L "$HOME" -type l 2>/dev/null)
   for broken_symlink in $broken_symlinks
     set target (readlink -f "$broken_symlink")
     if not string match -q '{{justfile_directory()}}/*' "$target"
