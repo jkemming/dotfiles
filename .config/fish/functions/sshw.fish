@@ -1,7 +1,7 @@
-function sshw
+function sshw -d 'Run SSH with the given arguments, making the given SSH key available to it'
 	if test (count $argv) -lt 1
-		printf "Missing key.\nUsage: sshw [key] [ssh arguments]\n	"
+		printf 'Insufficient arguments.\nUsage: sshw key [ssh arguments ...]\n'
 		return 1
 	end
-	ssh-agent fish -c "echo '$argv[1]' | ssh-add - &>/dev/null && ssh $argv[2..-1]"
+	with-ssh-key $argv[1] ssh $argv[2..-1]
 end
