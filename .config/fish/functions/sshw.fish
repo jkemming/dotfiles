@@ -1,7 +1,7 @@
 function sshw -d 'Run SSH with the given arguments, making the given SSH key available to it'
 	if test (count $argv) -lt 1
-		printf 'Insufficient arguments.\nUsage: sshw key [ssh arguments ...]\n'
+		printf 'Invalid arguments.\nUsage: sshw key [ssh arguments ...]\n'
 		return 1
 	end
-	with-ssh-key $argv[1] ssh $argv[2..-1]
+	with-ssh-keys $argv[1] -- ssh $argv[2..-1]
 end
