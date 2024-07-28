@@ -5,7 +5,8 @@ MISE_FISH_AUTO_ACTIVATE = 0
 experimental = true
 
 [tools]
+java = "temurin-21"
+kotlin = "1.9.25"
 node = "20"
 "npm:cdktf-cli" = "0.20.8"
 terraform = "1.9.3"
-usage = "latest"
