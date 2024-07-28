@@ -5,6 +5,7 @@ MISE_FISH_AUTO_ACTIVATE = 0
 experimental = true
 
 [tools]
+gradle = "8.9"
 java = "temurin-21"
 kotlin = "1.9.25"
 node = "20"
