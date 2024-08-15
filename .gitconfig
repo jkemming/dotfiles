@@ -3,6 +3,8 @@
 	email = git@jkemming.com
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
 [push]
 	default = current
 	autoSetupRemote = true
