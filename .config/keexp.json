@@ -1,0 +1,136 @@
+[
+  {
+    "uuid": "a163a4e171f148c990ddfbea327ec984",
+    "exports": [
+      {
+        "field": "API Key",
+        "variable": "PORKBUN_API_KEY"
+      },
+      {
+        "field": "Secret Key",
+        "variable": "PORKBUN_SECRET_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "5a9db13d1d984ac08bb95485ceca6ae1",
+    "exports": [
+      {
+        "field": "App Key ID",
+        "variable": "BACKBLAZE_B2_APP_KEY_ID"
+      },
+      {
+        "field": "App Key",
+        "variable": "BACKBLAZE_B2_APP_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "a250d3c93a654bb9a210702d7717141f",
+    "exports": [
+      {
+        "field": "UserName",
+        "variable": "MAILBOX_ORG_USERNAME"
+      },
+      {
+        "field": "Password",
+        "variable": "MAILBOX_ORG_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "d21a099dc66f40bc966aeb0e90679831",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "BACKBLAZE_B2_BACKUP_REPOSITORY_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "b2f046ef32464804a5e4a627958ff7b6",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "DISK_BACKUP_REPOSITORY_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "f2ee995de3ba4e86bc7cfd7472fee4c4",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "PRESEED_PASSWORD"
+      },
+      {
+        "field": "SSH Private Key",
+        "variable": "PRESEED_SSH_PRIVATE_KEY"
+      },
+      {
+        "field": "SSH Public Key",
+        "variable": "PRESEED_SSH_PUBLIC_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "ac6070ff53b84db48b413ebc5a08096c",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "LAB_PASSWORD"
+      },
+      {
+        "field": "Password Salt",
+        "variable": "LAB_PASSWORD_SALT"
+      },
+      {
+        "field": "SSH Private Key",
+        "variable": "LAB_SSH_PRIVATE_KEY"
+      },
+      {
+        "field": "SSH Public Key",
+        "variable": "LAB_SSH_PUBLIC_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "a2937808cd144809a251b827e538e8bc",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "PASIPHAE_PASSWORD"
+      },
+      {
+        "field": "Password Salt",
+        "variable": "PASIPHAE_PASSWORD_SALT"
+      },
+      {
+        "field": "SSH Private Key",
+        "variable": "PASIPHAE_SSH_PRIVATE_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "d88e4e99cdcf4fc6be9409d0cebf2a86",
+    "exports": [
+      {
+        "field": "SSH Private Key",
+        "variable": "VALETUDO_SSH_PRIVATE_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "095c6d1e130241e18e028ecefa996f70",
+    "exports": [
+      {
+        "field": "Access Key ID",
+        "variable": "AWS_ACCESS_KEY_ID"
+      },
+      {
+        "field": "Secret Access Key",
+        "variable": "AWS_SECRET_ACCESS_KEY"
+      }
+    ]
+  }
+]
