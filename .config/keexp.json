@@ -132,5 +132,14 @@
         "variable": "AWS_SECRET_ACCESS_KEY"
       }
     ]
+  },
+  {
+    "uuid": "a50037c75d784c19a5b28bb552485b5b",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "USER_PASSWORD"
+      }
+    ]
   }
 ]
