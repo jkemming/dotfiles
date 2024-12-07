@@ -141,5 +141,23 @@
         "variable": "USER_PASSWORD"
       }
     ]
+  },
+  {
+    "uuid": "2d8fe087f8f94214ad74f9cca064312e",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "APPLE_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "a633eda7d3fb4cffa56a6f3dc79bef5e",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "PEAR_PASSWORD"
+      }
+    ]
   }
 ]
