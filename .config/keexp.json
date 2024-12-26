@@ -159,5 +159,14 @@
         "variable": "PEAR_PASSWORD"
       }
     ]
+  },
+  {
+    "uuid": "ad09a1a2e7184eefbf139a1a0621e215",
+    "exports": [
+      {
+        "field": "Certificate",
+        "variable": "NEBULA_CA_CERTIFICATE"
+      }
+    ]
   }
 ]
