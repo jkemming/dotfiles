@@ -2,6 +2,7 @@ set shell := ["fish", "-c"]
 
 install:
   stow --restow --target="$HOME" .
+  mise install
 
 uninstall:
   stow --delete --target="$HOME" .
@@ -9,7 +10,6 @@ uninstall:
 prune:
   #!/usr/bin/env fish
   mise prune
-
   set broken_symlinks (find -L "$HOME" -type l 2>/dev/null)
   for broken_symlink in $broken_symlinks
     set target (readlink -f "$broken_symlink")
