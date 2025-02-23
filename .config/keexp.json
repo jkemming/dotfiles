@@ -206,5 +206,18 @@
         "variable": "LEDA_NEBULA_PUBLIC_KEY"
       }
     ]
+  },
+  {
+    "uuid": "a345397171d94eeba246e5730c87b4e3",
+    "exports": [
+      {
+        "field": "MariaDB Password",
+        "variable": "NEXTCLOUD_MARIADB_PASSWORD"
+      },
+      {
+        "field": "MariaDB Root Password",
+        "variable": "NEXTCLOUD_MARIADB_ROOT_PASSWORD"
+      }
+    ]
   }
 ]
