@@ -17,4 +17,3 @@
 		* Hide all toolbars under "Settings" → "Toolbars Shown"
 		* Uncheck "Appearance" → "Draw intense colors in bold font"
 2. Navigate to the repository and run `just install`
-3. Run `mise install`
