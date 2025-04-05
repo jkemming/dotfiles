@@ -112,15 +112,6 @@
     ]
   },
   {
-    "uuid": "d88e4e99cdcf4fc6be9409d0cebf2a86",
-    "exports": [
-      {
-        "field": "SSH Private Key",
-        "variable": "VALETUDO_SSH_PRIVATE_KEY"
-      }
-    ]
-  },
-  {
     "uuid": "095c6d1e130241e18e028ecefa996f70",
     "exports": [
       {
@@ -161,49 +152,28 @@
     ]
   },
   {
-    "uuid": "ad09a1a2e7184eefbf139a1a0621e215",
-    "exports": [
-      {
-        "field": "Certificate",
-        "variable": "NEBULA_CA_CERTIFICATE"
-      },
-      {
-        "field": "Private Key",
-        "variable": "NEBULA_CA_PRIVATE_KEY"
-      }
-    ]
-  },
-  {
-    "uuid": "65c6b07653de4507b7ba5ba22b053a17",
-    "exports": [
-      {
-        "field": "Nebula Certificate",
-        "variable": "ISONOE_NEBULA_CERTIFICATE"
-      },
-      {
-        "field": "Nebula Private Key",
-        "variable": "ISONOE_NEBULA_PRIVATE_KEY"
-      },
-      {
-        "field": "Nebula Public Key",
-        "variable": "ISONOE_NEBULA_PUBLIC_KEY"
-      }
-    ]
-  },
-  {
     "uuid": "55000d08748545bc9730530d3232880b",
     "exports": [
       {
-        "field": "Nebula Certificate",
-        "variable": "LEDA_NEBULA_CERTIFICATE"
+        "field": "WireGuard Private Key",
+        "variable": "LEDA_WIRE_GUARD_PRIVATE_KEY"
       },
       {
-        "field": "Nebula Private Key",
-        "variable": "LEDA_NEBULA_PRIVATE_KEY"
+        "field": "WireGuard Public Key",
+        "variable": "LEDA_WIRE_GUARD_PUBLIC_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "d88e4e99cdcf4fc6be9409d0cebf2a86",
+    "exports": [
+      {
+        "field": "WireGuard Private Key",
+        "variable": "VALETUDO_WIRE_GUARD_PRIVATE_KEY"
       },
       {
-        "field": "Nebula Public Key",
-        "variable": "LEDA_NEBULA_PUBLIC_KEY"
+        "field": "WireGuard Public Key",
+        "variable": "VALETUDO_WIRE_GUARD_PUBLIC_KEY"
       }
     ]
   },
