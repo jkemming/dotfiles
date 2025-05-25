@@ -178,15 +178,70 @@
     ]
   },
   {
-    "uuid": "a345397171d94eeba246e5730c87b4e3",
+    "uuid": "630d4fc7f65a41b9a8eeb1ab4109489e",
     "exports": [
       {
-        "field": "MariaDB Password",
-        "variable": "NEXTCLOUD_MARIADB_PASSWORD"
+        "field": "Access Key ID",
+        "variable": "S3_ACCESS_KEY_ID"
       },
       {
-        "field": "MariaDB Root Password",
-        "variable": "NEXTCLOUD_MARIADB_ROOT_PASSWORD"
+        "field": "Secret Access Key",
+        "variable": "S3_SECRET_ACCESS_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "ea25db6f9d754e65ad23f34ae743636e",
+    "exports": [
+      {
+        "field": "Backup Health Check ID",
+        "variable": "PAPERLESS_BACKUP_HEALTH_CHECK_ID"
+      },
+      {
+        "field": "Backup Repository Bucket",
+        "variable": "PAPERLESS_BACKUP_REPOSITORY_BUCKET"
+      },
+      {
+        "field": "Backup Repository Password",
+        "variable": "PAPERLESS_BACKUP_REPOSITORY_PASSWORD"
+      },
+      {
+        "field": "Secret Key",
+        "variable": "PAPERLESS_SECRET_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "0f730d847cb148768cde2b7cac35bd21",
+    "exports": [
+      {
+        "field": "Backup Health Check ID",
+        "variable": "ADGUARD_BACKUP_HEALTH_CHECK_ID"
+      },
+      {
+        "field": "Backup Repository Bucket",
+        "variable": "ADGUARD_BACKUP_REPOSITORY_BUCKET"
+      },
+      {
+        "field": "Backup Repository Password",
+        "variable": "ADGUARD_BACKUP_REPOSITORY_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "0522b1d7e5dd4528bedaa80e2d942f1c",
+    "exports": [
+      {
+        "field": "Backup Health Check ID",
+        "variable": "FRESHRSS_BACKUP_HEALTH_CHECK_ID"
+      },
+      {
+        "field": "Backup Repository Bucket",
+        "variable": "FRESHRSS_BACKUP_REPOSITORY_BUCKET"
+      },
+      {
+        "field": "Backup Repository Password",
+        "variable": "FRESHRSS_BACKUP_REPOSITORY_PASSWORD"
       }
     ]
   }
