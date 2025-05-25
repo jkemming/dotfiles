@@ -3,10 +3,11 @@ MISE_FISH_AUTO_ACTIVATE = 0
 
 [tools]
 gradle = "8"
-java = "temurin-21"
+java = "temurin-17"
 kotlin = "2"
 node = "22"
 "npm:cdktf-cli" = "0.20.11"
+python = "3"
 rust = "1"
 terraform = "1"
 "ubi:jkemming/keexp" = "latest"
