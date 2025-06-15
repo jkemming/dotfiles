@@ -156,11 +156,11 @@
     "exports": [
       {
         "field": "WireGuard Private Key",
-        "variable": "LEDA_WIRE_GUARD_PRIVATE_KEY"
+        "variable": "IOCASTE_WIRE_GUARD_PRIVATE_KEY"
       },
       {
         "field": "WireGuard Public Key",
-        "variable": "LEDA_WIRE_GUARD_PUBLIC_KEY"
+        "variable": "IOCASTE_WIRE_GUARD_PUBLIC_KEY"
       }
     ]
   },
@@ -194,10 +194,6 @@
     "uuid": "ea25db6f9d754e65ad23f34ae743636e",
     "exports": [
       {
-        "field": "Backup Health Check ID",
-        "variable": "PAPERLESS_BACKUP_HEALTH_CHECK_ID"
-      },
-      {
         "field": "Backup Repository Bucket",
         "variable": "PAPERLESS_BACKUP_REPOSITORY_BUCKET"
       },
@@ -215,10 +211,6 @@
     "uuid": "0f730d847cb148768cde2b7cac35bd21",
     "exports": [
       {
-        "field": "Backup Health Check ID",
-        "variable": "ADGUARD_BACKUP_HEALTH_CHECK_ID"
-      },
-      {
         "field": "Backup Repository Bucket",
         "variable": "ADGUARD_BACKUP_REPOSITORY_BUCKET"
       },
@@ -232,16 +224,43 @@
     "uuid": "0522b1d7e5dd4528bedaa80e2d942f1c",
     "exports": [
       {
-        "field": "Backup Health Check ID",
-        "variable": "FRESHRSS_BACKUP_HEALTH_CHECK_ID"
-      },
-      {
         "field": "Backup Repository Bucket",
         "variable": "FRESHRSS_BACKUP_REPOSITORY_BUCKET"
       },
       {
         "field": "Backup Repository Password",
         "variable": "FRESHRSS_BACKUP_REPOSITORY_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "57a0f4cb1e384f6fbe9b1c447cf9da3d",
+    "exports": [
+      {
+        "field": "Backup Repository Bucket",
+        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_BUCKET"
+      },
+      {
+        "field": "Backup Repository Password",
+        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "ae6bb44c3ff342279066e83ad28183ee",
+    "exports": [
+      {
+        "field": "API Key",
+        "variable": "HEALTHCHECKSIO_API_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "015337d407234b9d939c9780d21b8a81",
+    "exports": [
+      {
+        "field": "Health Check ID",
+        "variable": "ADRASTEA_HEALTH_CHECK_ID"
       }
     ]
   }
