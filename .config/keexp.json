@@ -202,6 +202,10 @@
         "variable": "PAPERLESS_BACKUP_REPOSITORY_PASSWORD"
       },
       {
+        "field": "Postgres Password",
+        "variable": "PAPERLESS_POSTGRES_PASSWORD"
+      },
+      {
         "field": "Secret Key",
         "variable": "PAPERLESS_SECRET_KEY"
       }
@@ -230,6 +234,10 @@
       {
         "field": "Backup Repository Password",
         "variable": "FRESHRSS_BACKUP_REPOSITORY_PASSWORD"
+      },
+      {
+        "field": "Postgres Password",
+        "variable": "FRESHRSS_POSTGRES_PASSWORD"
       }
     ]
   },
@@ -243,6 +251,14 @@
       {
         "field": "Backup Repository Password",
         "variable": "NEXTCLOUD_BACKUP_REPOSITORY_PASSWORD"
+      },
+      {
+        "field": "MariaDB Password",
+        "variable": "NEXTCLOUD_MARIADB_PASSWORD"
+      },
+      {
+        "field": "MariaDB Root Password",
+        "variable": "NEXTCLOUD_MARIADB_ROOT_PASSWORD"
       }
     ]
   },
