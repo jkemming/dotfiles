@@ -16,12 +16,34 @@
     "uuid": "5a9db13d1d984ac08bb95485ceca6ae1",
     "exports": [
       {
-        "field": "App Key ID",
-        "variable": "BACKBLAZE_B2_APP_KEY_ID"
+        "field": "Key",
+        "variable": "PASIPHAE_BACKBLAZE_B2_APPLICATION_KEY"
       },
       {
-        "field": "App Key",
-        "variable": "BACKBLAZE_B2_APP_KEY"
+        "field": "Key ID",
+        "variable": "PASIPHAE_BACKBLAZE_B2_APPLICATION_KEY_ID"
+      }
+    ]
+  },
+  {
+    "uuid": "d21a099dc66f40bc966aeb0e90679831",
+    "exports": [
+      {
+        "field": "Password",
+        "variable": "PASIPHAE_BACKBLAZE_B2_BACKUP_REPOSITORY_PASSWORD"
+      }
+    ]
+  },
+  {
+    "uuid": "791886b79d244ecda4505c2d966baf67",
+    "exports": [
+      {
+        "field": "B2 Master Application Key",
+        "variable": "BACKBLAZE_B2_MASTER_APPLICATION_KEY"
+      },
+      {
+        "field": "B2 Master Application Key ID",
+        "variable": "BACKBLAZE_B2_MASTER_APPLICATION_KEY_ID"
       }
     ]
   },
@@ -35,15 +57,6 @@
       {
         "field": "Password",
         "variable": "MAILBOX_ORG_PASSWORD"
-      }
-    ]
-  },
-  {
-    "uuid": "d21a099dc66f40bc966aeb0e90679831",
-    "exports": [
-      {
-        "field": "Password",
-        "variable": "BACKBLAZE_B2_BACKUP_REPOSITORY_PASSWORD"
       }
     ]
   },
@@ -91,23 +104,6 @@
       {
         "field": "SSH Public Key",
         "variable": "LAB_SSH_PUBLIC_KEY"
-      }
-    ]
-  },
-  {
-    "uuid": "a2937808cd144809a251b827e538e8bc",
-    "exports": [
-      {
-        "field": "Password",
-        "variable": "PASIPHAE_PASSWORD"
-      },
-      {
-        "field": "Password Salt",
-        "variable": "PASIPHAE_PASSWORD_SALT"
-      },
-      {
-        "field": "SSH Private Key",
-        "variable": "PASIPHAE_SSH_PRIVATE_KEY"
       }
     ]
   },
