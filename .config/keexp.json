@@ -174,24 +174,19 @@
     ]
   },
   {
-    "uuid": "630d4fc7f65a41b9a8eeb1ab4109489e",
-    "exports": [
-      {
-        "field": "Access Key ID",
-        "variable": "S3_ACCESS_KEY_ID"
-      },
-      {
-        "field": "Secret Access Key",
-        "variable": "S3_SECRET_ACCESS_KEY"
-      }
-    ]
-  },
-  {
     "uuid": "ea25db6f9d754e65ad23f34ae743636e",
     "exports": [
       {
-        "field": "Backup Repository Bucket",
-        "variable": "PAPERLESS_BACKUP_REPOSITORY_BUCKET"
+        "field": "Backup Repository B2 Application Key",
+        "variable": "PAPERLESS_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+      },
+      {
+        "field": "Backup Repository B2 Application Key ID",
+        "variable": "PAPERLESS_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+      },
+      {
+        "field": "Backup Repository B2 Bucket",
+        "variable": "PAPERLESS_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
@@ -211,8 +206,16 @@
     "uuid": "0f730d847cb148768cde2b7cac35bd21",
     "exports": [
       {
-        "field": "Backup Repository Bucket",
-        "variable": "ADGUARD_BACKUP_REPOSITORY_BUCKET"
+        "field": "Backup Repository B2 Application Key",
+        "variable": "ADGUARD_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+      },
+      {
+        "field": "Backup Repository B2 Application Key ID",
+        "variable": "ADGUARD_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+      },
+      {
+        "field": "Backup Repository B2 Bucket",
+        "variable": "ADGUARD_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
@@ -224,8 +227,16 @@
     "uuid": "0522b1d7e5dd4528bedaa80e2d942f1c",
     "exports": [
       {
-        "field": "Backup Repository Bucket",
-        "variable": "FRESHRSS_BACKUP_REPOSITORY_BUCKET"
+        "field": "Backup Repository B2 Application Key",
+        "variable": "FRESHRSS_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+      },
+      {
+        "field": "Backup Repository B2 Application Key ID",
+        "variable": "FRESHRSS_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+      },
+      {
+        "field": "Backup Repository B2 Bucket",
+        "variable": "FRESHRSS_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
@@ -241,8 +252,16 @@
     "uuid": "57a0f4cb1e384f6fbe9b1c447cf9da3d",
     "exports": [
       {
-        "field": "Backup Repository Bucket",
-        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_BUCKET"
+        "field": "Backup Repository B2 Application Key",
+        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+      },
+      {
+        "field": "Backup Repository B2 Application Key ID",
+        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+      },
+      {
+        "field": "Backup Repository B2 Bucket",
+        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
