@@ -70,23 +70,6 @@
     ]
   },
   {
-    "uuid": "f2ee995de3ba4e86bc7cfd7472fee4c4",
-    "exports": [
-      {
-        "field": "Password",
-        "variable": "PRESEED_PASSWORD"
-      },
-      {
-        "field": "SSH Private Key",
-        "variable": "PRESEED_SSH_PRIVATE_KEY"
-      },
-      {
-        "field": "SSH Public Key",
-        "variable": "PRESEED_SSH_PUBLIC_KEY"
-      }
-    ]
-  },
-  {
     "uuid": "ac6070ff53b84db48b413ebc5a08096c",
     "exports": [
       {
@@ -94,8 +77,8 @@
         "variable": "LAB_PASSWORD"
       },
       {
-        "field": "Password Salt",
-        "variable": "LAB_PASSWORD_SALT"
+        "field": "Password Hash",
+        "variable": "LAB_PASSWORD_HASH"
       },
       {
         "field": "SSH Private Key",
