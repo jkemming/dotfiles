@@ -277,5 +277,14 @@
         "variable": "ADRASTEA_HEALTH_CHECK_ID"
       }
     ]
+  },
+  {
+    "uuid": "2a620e2bbc524701b169bff1bf1bd9af",
+    "exports": [
+      {
+        "field": "Secret Key",
+        "variable": "SEARX_SECRET_KEY"
+      }
+    ]
   }
 ]
