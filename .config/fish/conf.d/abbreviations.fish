@@ -18,7 +18,6 @@ abbr -a ls 'ls -lah --color'
 abbr -a m 'mise'
 abbr -a mr 'mise run'
 abbr -a mt 'mise tasks'
-abbr -a sudo 'sudo -E'
 abbr -a tf 'terraform'
 abbr -a tfa 'terraform apply'
 abbr -a tfi 'terraform init'
@@ -26,7 +25,7 @@ abbr -a tfp 'terraform plan'
 
 # Allow going up multiple directories by typing multiple dots
 function multicd
-  echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+  echo (string repeat -n (math (string length -- $argv[1]) - 1) ../)
 end
 abbr --add multicd --regex '^\.\.+$' --function multicd
 
