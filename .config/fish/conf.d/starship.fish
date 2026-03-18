@@ -15,3 +15,4 @@ function transient_execute_if_not_empty
   end
 end
 bind enter 'transient_execute_if_not_empty'
+bind ctrl-j 'transient_execute_if_not_empty'
