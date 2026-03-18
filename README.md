@@ -2,7 +2,6 @@
 
 * [fish](https://fishshell.com/)
 * [GNU Stow](https://www.gnu.org/software/stow/)
-* [just](https://github.com/casey/just)
 * [mise](https://mise.jdx.dev/)
 * [Starship](https://starship.rs/)
 * A [Nerd Font](https://www.nerdfonts.com/) of your choice, e.g. JetBrains Mono
@@ -16,4 +15,4 @@
 	* For KDE Konsole:
 		* Hide all toolbars under "Settings" → "Toolbars Shown"
 		* Uncheck "Appearance" → "Draw intense colors in bold font"
-2. Navigate to the repository and run `just install`
+2. Navigate to the repository and run `mise run install`
