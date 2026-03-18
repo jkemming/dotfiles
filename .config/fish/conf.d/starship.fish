@@ -6,13 +6,19 @@ end
 starship init fish | source
 enable_transience
 
-# Only execute command if it isn't empty. Prevents issue where multiple prompts aren't cleared when hitting `enter`
-# without a command entered.
-function transient_execute_if_not_empty
+# Override default `transient_execute` function to tweak the following:
+#   - Prevent multiple prompts in case of invalid fish syntax (e.g. `echo "${test}"`)
+#   - Prevent empty commands being executed by simply pressing `enter`
+function transient_execute
   set -l command (commandline)
-  if test -n "$command"
-    transient_execute
+  if test -z "$command"
+    return
   end
+
+  set -g TRANSIENT 1
+  set -g RIGHT_TRANSIENT 1
+  commandline -f repaint
+  commandline -f execute
 end
-bind enter 'transient_execute_if_not_empty'
-bind ctrl-j 'transient_execute_if_not_empty'
+# Prevent `ctrl-j` from printing multiple prompts
+bind ctrl-j 'transient_execute'
