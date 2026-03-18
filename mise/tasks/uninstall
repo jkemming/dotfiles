@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+#MISE description="Delete symlinks in home directory"
+
+stow --delete --verbose --target="$HOME" .

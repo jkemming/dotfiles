@@ -1,5 +1,5 @@
 .git
 .gitconfig
-justfile
 LICENSE
+mise
 README.md

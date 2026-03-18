@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+#MISE description="Create symlinks in home directory"
+
+stow --restow --verbose --target="$HOME" .
