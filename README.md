@@ -15,4 +15,8 @@
 	* For KDE Konsole:
 		* Hide all toolbars under "Settings" → "Toolbars Shown"
 		* Uncheck "Appearance" → "Draw intense colors in bold font"
-2. Navigate to the repository and run `mise run install`
+2. Navigate to the repository and run:
+	```shell
+	mise install
+	mise run install
+	```
