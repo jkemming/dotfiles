@@ -1,5 +1,6 @@
-.git
-.gitconfig
-LICENSE
-mise
-README.md
+/.git/
+/.gitconfig
+/.gitignore
+/LICENSE
+/mise/
+/README.md
