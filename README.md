@@ -1,3 +1,7 @@
+# Overview
+
+These are my dotfiles for use on Fedora with KDE Konsole.
+
 # Requirements
 
 - [fish](https://fishshell.com/)
@@ -7,7 +11,7 @@
 
 # Setup
 
-1. Configure KDE Konsole:
+1. Configure Konsole:
     - Hide all toolbars under "Settings" → "Toolbars Shown"
     - Create a new profile:
         - Set `/usr/bin/fish` as command
