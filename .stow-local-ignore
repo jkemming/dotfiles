@@ -1,5 +1,6 @@
-/.git/
-/.gitignore
-/LICENSE
-/mise/
-/README.md
+\.git
+\.gitignore
+\.idea
+LICENSE
+mise
+README\.md
