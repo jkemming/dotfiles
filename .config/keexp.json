@@ -161,27 +161,27 @@
     "exports": [
       {
         "field": "Backup Repository B2 Application Key",
-        "variable": "PAPERLESS_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+        "variable": "PAPERLESS_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
       },
       {
         "field": "Backup Repository B2 Application Key ID",
-        "variable": "PAPERLESS_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+        "variable": "PAPERLESS_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
       },
       {
         "field": "Backup Repository B2 Bucket",
-        "variable": "PAPERLESS_BACKUP_REPOSITORY_B2_BUCKET"
+        "variable": "PAPERLESS_PRODUCTION_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
-        "variable": "PAPERLESS_BACKUP_REPOSITORY_PASSWORD"
+        "variable": "PAPERLESS_PRODUCTION_BACKUP_REPOSITORY_PASSWORD"
       },
       {
         "field": "Postgres Password",
-        "variable": "PAPERLESS_POSTGRES_PASSWORD"
+        "variable": "PAPERLESS_PRODUCTION_POSTGRES_PASSWORD"
       },
       {
         "field": "Secret Key",
-        "variable": "PAPERLESS_SECRET_KEY"
+        "variable": "PAPERLESS_PRODUCTION_SECRET_KEY"
       }
     ]
   },
@@ -190,19 +190,19 @@
     "exports": [
       {
         "field": "Backup Repository B2 Application Key",
-        "variable": "ADGUARD_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+        "variable": "ADGUARD_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
       },
       {
         "field": "Backup Repository B2 Application Key ID",
-        "variable": "ADGUARD_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+        "variable": "ADGUARD_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
       },
       {
         "field": "Backup Repository B2 Bucket",
-        "variable": "ADGUARD_BACKUP_REPOSITORY_B2_BUCKET"
+        "variable": "ADGUARD_PRODUCTION_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
-        "variable": "ADGUARD_BACKUP_REPOSITORY_PASSWORD"
+        "variable": "ADGUARD_PRODUCTION_BACKUP_REPOSITORY_PASSWORD"
       }
     ]
   },
@@ -211,23 +211,23 @@
     "exports": [
       {
         "field": "Backup Repository B2 Application Key",
-        "variable": "FRESHRSS_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+        "variable": "FRESHRSS_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
       },
       {
         "field": "Backup Repository B2 Application Key ID",
-        "variable": "FRESHRSS_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+        "variable": "FRESHRSS_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
       },
       {
         "field": "Backup Repository B2 Bucket",
-        "variable": "FRESHRSS_BACKUP_REPOSITORY_B2_BUCKET"
+        "variable": "FRESHRSS_PRODUCTION_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
-        "variable": "FRESHRSS_BACKUP_REPOSITORY_PASSWORD"
+        "variable": "FRESHRSS_PRODUCTION_BACKUP_REPOSITORY_PASSWORD"
       },
       {
         "field": "Postgres Password",
-        "variable": "FRESHRSS_POSTGRES_PASSWORD"
+        "variable": "FRESHRSS_PRODUCTION_POSTGRES_PASSWORD"
       }
     ]
   },
@@ -236,27 +236,27 @@
     "exports": [
       {
         "field": "Backup Repository B2 Application Key",
-        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
+        "variable": "NEXTCLOUD_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY"
       },
       {
         "field": "Backup Repository B2 Application Key ID",
-        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
+        "variable": "NEXTCLOUD_PRODUCTION_BACKUP_REPOSITORY_B2_APPLICATION_KEY_ID"
       },
       {
         "field": "Backup Repository B2 Bucket",
-        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_B2_BUCKET"
+        "variable": "NEXTCLOUD_PRODUCTION_BACKUP_REPOSITORY_B2_BUCKET"
       },
       {
         "field": "Backup Repository Password",
-        "variable": "NEXTCLOUD_BACKUP_REPOSITORY_PASSWORD"
+        "variable": "NEXTCLOUD_PRODUCTION_BACKUP_REPOSITORY_PASSWORD"
       },
       {
         "field": "MariaDB Password",
-        "variable": "NEXTCLOUD_MARIADB_PASSWORD"
+        "variable": "NEXTCLOUD_PRODUCTION_MARIADB_PASSWORD"
       },
       {
         "field": "MariaDB Root Password",
-        "variable": "NEXTCLOUD_MARIADB_ROOT_PASSWORD"
+        "variable": "NEXTCLOUD_PRODUCTION_MARIADB_ROOT_PASSWORD"
       }
     ]
   },
@@ -283,7 +283,16 @@
     "exports": [
       {
         "field": "Secret Key",
-        "variable": "SEARX_SECRET_KEY"
+        "variable": "SEARX_PRODUCTION_SECRET_KEY"
+      }
+    ]
+  },
+  {
+    "uuid": "f5f94ff63b1a4582a7cb3f1d3dbba1bc",
+    "exports": [
+      {
+        "field": "Postgres Password",
+        "variable": "FORGEJO_TEST_POSTGRES_PASSWORD"
       }
     ]
   }
