@@ -1,6 +1,6 @@
 # Overview
 
-These are my dotfiles for use on Fedora with KDE Konsole.
+These are my dotfiles I use with Fedora and KDE Konsole.
 
 # Requirements
 
@@ -11,14 +11,8 @@ These are my dotfiles for use on Fedora with KDE Konsole.
 
 # Setup
 
-1. Configure Konsole:
-    - Hide all toolbars under "Settings" → "Toolbars Shown"
-    - Create a new profile:
-        - Set `/usr/bin/fish` as command
-        - Check "Default profile"
-        - Uncheck "Appearance" → "Draw intense colors in bold font"
-2. Navigate to the repository and run:
-   ```shell
-   mise sync
-   mise run sync
-   ```
+Navigate to the repository and run:
+```shell
+mise sync
+mise run sync
+```
