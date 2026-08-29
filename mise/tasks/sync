@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-#MISE description="Create symlinks in home directory"
+#MISE description="Sync to home directory"
 
 # Creates `~/.config/git/includes.config` from `*.config` files in `~/.config/git/conf.d/`.
 # Each file's first line must declare its scope: `# directory = ~/projects/work/`

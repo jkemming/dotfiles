@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-#MISE description="Delete symlinks in home directory"
+#MISE description="Unsync from home directory"
 
 stow --delete --verbose --target="$HOME" .
 rm "$HOME/.config/git/includes.config"
