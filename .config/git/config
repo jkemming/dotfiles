@@ -8,3 +8,5 @@
 [push]
 	default = current
 	autoSetupRemote = true
+[include]
+    path = ~/.config/git/includes.config
