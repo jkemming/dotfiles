@@ -19,6 +19,6 @@ These are my dotfiles for use on Fedora with KDE Konsole.
         - Uncheck "Appearance" → "Draw intense colors in bold font"
 2. Navigate to the repository and run:
    ```shell
-   mise install
-   mise run install
+   mise sync
+   mise run sync
    ```
