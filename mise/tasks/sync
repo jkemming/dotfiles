@@ -1,5 +1,6 @@
 #!/usr/bin/env fish
 #MISE description="Sync to home directory"
+#USAGE flag "--prune" help="Do a full target-tree scan to prune orphaned symlinks left behind by renamed/moved files (slower)"
 
 # Creates `~/.config/git/includes.config` from `*.config` files in `~/.config/git/conf.d/`.
 # Each file's first line must declare its scope: `# directory = ~/projects/work/`
@@ -32,5 +33,11 @@ function create_git_includes_config --description "Rebuild ~/.config/git/include
     echo "Generated includes for $count files in $out_file"
 end
 
-stow --restow --verbose --no-folding --target="$HOME" .
+set stow_extra_args
+if test "$usage_prune" = "true"
+    echo "Note: Pruning does not clean up empty directories after symlinks are removed"
+    set stow_extra_args --compat
+end
+
+stow --restow --verbose --no-folding --target="$HOME" $stow_extra_args .
 create_git_includes_config
