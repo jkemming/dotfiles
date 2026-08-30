@@ -30,7 +30,7 @@ abbr -a tfp 'terraform plan'
 
 # Allow going up multiple directories by typing multiple dots
 function multicd
-  echo (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+    echo (string repeat -n (math (string length -- $argv[1]) - 1) ../)
 end
 abbr --add multicd --regex '^\.\.+$' --function multicd
 

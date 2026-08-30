@@ -1,12 +1,12 @@
 [user]
-	name = jkemming
-	email = git@jkemming.com
+    name = jkemming
+    email = git@jkemming.com
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [pull]
-	rebase = true
+    rebase = true
 [push]
-	default = current
-	autoSetupRemote = true
+    default = current
+    autoSetupRemote = true
 [include]
     path = ~/.config/git/includes.config
