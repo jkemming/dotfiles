@@ -2,6 +2,7 @@
 MISE_FISH_AUTO_ACTIVATE = 0
 
 [tools]
+"github:starship/starship" = "1"
 gradle = "8"
 java = "temurin-21"
 kotlin = "2"
@@ -11,5 +12,4 @@ python = "3"
 rust = "1"
 terraform = "1"
 "ubi:jkemming/keexp" = "0"
-"github:starship/starship" = "1"
 usage = "latest"
