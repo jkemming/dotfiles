@@ -1,3 +1,3 @@
 function ls
-    command ls -lah --color $argv
+    command ls -l --all --human-readable --color $argv
 end

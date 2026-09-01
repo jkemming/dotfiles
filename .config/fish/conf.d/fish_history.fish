@@ -1,4 +1,4 @@
-function __disable_history_check --on-variable PWD --description 'Disable fish history inside configured directories'
+function __jkemming__update_automatic_private_mode --on-variable PWD --description 'Disable fish history inside configured directories'
     set -l here (realpath $PWD 2>/dev/null)
     test -z "$here"; and set here $PWD
 
@@ -18,7 +18,7 @@ function __disable_history_check --on-variable PWD --description 'Disable fish h
     end
 end
 
-function __disable_history_startup --on-event fish_prompt
-    __disable_history_check
-    functions -e __disable_history_startup
+function __jkemming__initialize_automatic_private_mode --on-event fish_prompt
+    __jkemming__update_automatic_private_mode
+    functions -e __jkemming__initialize_automatic_private_mode
 end

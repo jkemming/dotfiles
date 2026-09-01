@@ -1,5 +1,5 @@
 function enable-history
     set -ge fish_private_mode
-    # Run check to ensure automatic disabling is applied
-    __disable_history_check
+    # Update to ensure automatic disabling is applied
+    __jkemming__update_automatic_private_mode
 end

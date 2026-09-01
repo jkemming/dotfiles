@@ -30,13 +30,13 @@ abbr -a tfi 'terraform init'
 abbr -a tfp 'terraform plan'
 
 # Allow going up multiple directories by typing multiple dots
-function multicd
+function __jkemming__multicd
     echo (string repeat -n (math (string length -- $argv[1]) - 1) ../)
 end
-abbr --add multicd --regex '^\.\.+$' --function multicd
+abbr --add __jkemming__multicd --regex '^\.\.+$' --function __jkemming__multicd
 
 # Allow repeating the last command with `!!`
-function last_history_item
+function __jkemming__last_history_item
   echo $history[1]
 end
-abbr -a !! --position anywhere --function last_history_item
+abbr -a !! --position anywhere --function __jkemming__last_history_item
