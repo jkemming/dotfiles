@@ -62,6 +62,7 @@ __jkemming__abbr tf terraform i 'init'
 __jkemming__abbr tf terraform p 'plan'
 
 # Complex abbreviations
+abbr --add '-' 'cd -'
 abbr --add gfr 'git fetch && git rebase'
 abbr --add --set-cursor gwip 'git add --all && git commit --message "wip [skip ci]%" && git push'
 
