@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$directory$git_branch$git_status$git_state$cmd_duration$fill
+$directory${env_var.fish_private_mode}$git_branch$git_status$git_state$cmd_duration$fill
 $status$character"""
 
 [character]
@@ -10,6 +10,11 @@ error_symbol = '[✗](bold red) '
 
 [cmd_duration]
 format = '[·](#808080) [  $duration]($style) '
+
+[env_var.fish_private_mode]
+variable = 'fish_private_mode'
+format = "[·](#808080) [\uf21b]($style) "
+style = 'bold red'
 
 [fill]
 symbol = '·'
