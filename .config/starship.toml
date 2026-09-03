@@ -5,29 +5,30 @@ $directory${env_var.fish_private_mode}$git_branch$git_status$git_state$cmd_durat
 $status$character"""
 
 [character]
-success_symbol = '[➜](bold green) '
-error_symbol = '[✗](bold red) '
+success_symbol = '[➜](#00ff00) '
+error_symbol = '[✗](#ff0000) '
 
 [cmd_duration]
-format = '[·](#808080) [  $duration]($style) '
+format = '[·](#808080) [  $duration](#cdcd00) '
+
+[directory]
+style = '#00cdcd'
 
 [env_var.fish_private_mode]
 variable = 'fish_private_mode'
-format = "[·](#808080) [\uf21b]($style) "
-style = 'bold red'
+format = "[·](#808080) [\uf21b](#cd5c5c) "
 
 [fill]
 symbol = '·'
 style = '#808080'
 
 [git_branch]
-format = '[·](#808080) [$symbol$branch(:$remote_branch)]($style) '
+format = '[·](#808080) [$symbol$branch(:$remote_branch)](#5c5cff) '
 
 [git_status]
 stashed = ''
-style = 'bold yellow'
+style = '#cdcd00'
 
 [status]
 disabled = false
-format = "[$symbol$status]($style) "
-symbol = ''
+format = "[$status](#ff0000) "
