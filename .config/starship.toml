@@ -23,7 +23,7 @@ symbol = '·'
 style = '#808080'
 
 [git_branch]
-format = '[·](#808080) [$symbol$branch(:$remote_branch)](#5c5cff) '
+format = "[·](#808080) [\ue725 $branch(:$remote_branch)](#5c5cff) "
 
 [git_status]
 stashed = ''
