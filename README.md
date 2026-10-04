@@ -13,6 +13,6 @@ These are my dotfiles I use with Fedora and KDE Konsole.
 
 Navigate to the repository and run:
 ```shell
-mise sync
+mise install
 mise run sync
 ```

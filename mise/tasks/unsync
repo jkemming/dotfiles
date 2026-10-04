@@ -2,4 +2,4 @@
 #MISE description="Unsync from home directory"
 
 stow --delete --verbose --target="$HOME" --dir=. home
-rm "$HOME/.config/git/includes.config"
+rm -f "$HOME/.config/git/includes.config"
