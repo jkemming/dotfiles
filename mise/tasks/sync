@@ -39,5 +39,5 @@ if test "$usage_prune" = "true"
     set stow_extra_args --compat
 end
 
-stow --restow --verbose --no-folding --target="$HOME" $stow_extra_args .
+stow --restow --verbose --no-folding --target="$HOME" --dir=. $stow_extra_args home
 create_git_includes_config
