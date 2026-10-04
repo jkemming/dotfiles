@@ -1,6 +1,8 @@
 [user]
     name = jkemming
     email = git@jkemming.com
+[include]
+    path = ~/.config/git/includes.config
 [init]
     defaultBranch = main
 [pull]
@@ -8,5 +10,5 @@
 [push]
     default = current
     autoSetupRemote = true
-[include]
-    path = ~/.config/git/includes.config
+[url "git@github.com:"]
+    insteadOf = https://github.com/
