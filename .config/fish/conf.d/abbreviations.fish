@@ -55,6 +55,7 @@ __jkemming__abbr g git swc 'switch --force-create'
 __jkemming__abbr g git swd 'switch --detach'
 __jkemming__abbr l ls
 __jkemming__abbr m mise
+__jkemming__abbr m mise i install
 __jkemming__abbr m mise r run
 __jkemming__abbr m mise t tasks
 __jkemming__abbr tf terraform
@@ -63,7 +64,7 @@ __jkemming__abbr tf terraform i init
 __jkemming__abbr tf terraform p plan
 
 # Complex abbreviations
-abbr --add --set-cursor p 'cd ~/Projects/%'
+abbr --add p project
 abbr --add '-' 'cd -'
 abbr --add gfr 'git fetch && git rebase'
 abbr --add --set-cursor gwip 'git add --all && git commit --message "wip [skip ci]%" && git push'
