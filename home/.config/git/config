@@ -1,6 +1,3 @@
-[user]
-    name = jkemming
-    email = git@jkemming.com
 [include]
     path = ~/.config/git/includes.config
 [init]
@@ -12,3 +9,6 @@
     autoSetupRemote = true
 [url "git@github.com:"]
     insteadOf = https://github.com/
+[user]
+    name = jkemming
+    email = git@jkemming.com
