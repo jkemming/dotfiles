@@ -1,3 +1,5 @@
+status is-interactive; or return
+
 abbr --add - 'cd -'
 abbr --add g git
 abbr --add ga 'git add'

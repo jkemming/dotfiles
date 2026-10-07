@@ -1,3 +1,5 @@
+status is-interactive; or return
+
 set -g __jkemming__automatic_private_mode_active false
 set -g __jkemming__manual_private_mode_active false
 
