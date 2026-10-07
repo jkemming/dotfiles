@@ -104,15 +104,6 @@
     ]
   },
   {
-    "uuid": "a50037c75d784c19a5b28bb552485b5b",
-    "exports": [
-      {
-        "field": "Password",
-        "variable": "USER_PASSWORD"
-      }
-    ]
-  },
-  {
     "uuid": "2d8fe087f8f94214ad74f9cca064312e",
     "exports": [
       {
