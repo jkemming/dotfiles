@@ -12,5 +12,6 @@ function git
     or return
     set --local private_key (printf '%s' $secrets | jq --raw-output --arg field $private_key_field '.[$field]' | string collect)
     set --local public_key (printf '%s' $secrets | jq --raw-output --arg field $public_key_field '.[$field]')
-    with-ssh-keys "$private_key" -- command git -c (string escape -- "user.signingkey=key::$public_key") (string escape -- $argv)
+    set --local --export SSH_PRIVATE_KEY $private_key
+    ssh-agent fish --no-config --command 'printf "%s\n" $SSH_PRIVATE_KEY | ssh-add - &>/dev/null; and set --erase SSH_PRIVATE_KEY; and command git -c "user.signingkey=key::$argv[1]" $argv[2..-1]' $public_key $argv
 end
