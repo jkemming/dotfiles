@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-lab secret get "$(hostname)-password" && exit
-read -rsp "$1" password </dev/tty && echo >/dev/tty && echo "$password"
+lab secret get "$(hostname)" "Password" || kill -KILL "$PPID"
