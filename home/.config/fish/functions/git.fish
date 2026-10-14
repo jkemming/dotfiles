@@ -8,9 +8,9 @@ function git
         return
     end
 
-    set --local private_key (lab secret get $entry $private_key_field | string collect)
-    test $pipestatus[1] -eq 0; or return
-    set --local public_key (lab secret get $entry $public_key_field)
+    set --local secrets (lab secret get --json $entry $private_key_field $public_key_field)
     or return
+    set --local private_key (printf '%s' $secrets | jq --raw-output --arg field $private_key_field '.[$field]' | string collect)
+    set --local public_key (printf '%s' $secrets | jq --raw-output --arg field $public_key_field '.[$field]')
     with-ssh-keys "$private_key" -- command git -c (string escape -- "user.signingkey=key::$public_key") (string escape -- $argv)
 end
