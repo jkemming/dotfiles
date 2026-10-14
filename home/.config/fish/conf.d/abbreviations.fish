@@ -28,6 +28,9 @@ abbr --add gswd 'git switch --detach'
 abbr --add gwip --set-cursor 'git add --all && git commit --message "wip [skip ci]%" && git push'
 abbr --add l ls
 abbr --add m mise
+abbr --add md 'mise dotfiles'
+abbr --add mda 'mise dotfiles apply --prune --yes'
+abbr --add mdu 'mise dotfiles unapply --yes'
 abbr --add mi 'mise install'
 abbr --add mr 'mise run'
 abbr --add mt 'mise tasks'
