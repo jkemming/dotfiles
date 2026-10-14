@@ -14,12 +14,12 @@ These are my dotfiles I use with Fedora and KDE Konsole.
 
 ```shell
 mise install
-mise dotfiles apply --prune
+mise dotfiles apply --prune --yes
 ```
 
 
 # Uninstall
 
 ```shell
-mise dotfiles unapply
+mise dotfiles unapply --yes
 ```
