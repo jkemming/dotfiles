@@ -1,0 +1,7 @@
+[settings]
+dotfiles.root = ".."
+
+[dotfile_groups.home]
+root   = "home"
+target = "~"
+mode   = "copy"

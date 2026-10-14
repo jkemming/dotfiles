@@ -10,5 +10,3 @@
 [user]
     name = jkemming
     email = git@jkemming.com
-[include]
-    path = ~/.config/git/includes.config
