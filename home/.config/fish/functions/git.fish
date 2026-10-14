@@ -1,13 +1,16 @@
 function git
-    set --local name (command git config ssh.keySecretName)
-    set --local field (command git config ssh.keySecretField)
+    set --local entry (command git config secrets.entry)
+    set --local private_key_field (command git config secrets.privateKeyField)
+    set --local public_key_field (command git config secrets.publicKeyField)
 
-    if not contains -- "$argv[1]" clone fetch ls-remote pull push; or test -z "$name" -o -z "$field"
+    if not contains -- "$argv[1]" am cherry-pick clone commit fetch ls-remote merge pull push rebase revert tag; or test -z "$entry" -o -z "$private_key_field" -o -z "$public_key_field"
         command git $argv
         return
     end
 
-    set --local key (lab secret get $name $field | string collect)
+    set --local private_key (lab secret get $entry $private_key_field | string collect)
     test $pipestatus[1] -eq 0; or return
-    with-ssh-keys "$key" -- command git (string escape -- $argv)
+    set --local public_key (lab secret get $entry $public_key_field)
+    or return
+    with-ssh-keys "$private_key" -- command git -c (string escape -- "user.signingkey=key::$public_key") (string escape -- $argv)
 end

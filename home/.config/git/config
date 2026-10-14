@@ -1,3 +1,7 @@
+[commit]
+    gpgsign = true
+[gpg]
+    format = ssh
 [init]
     defaultBranch = main
 [pull]
@@ -5,9 +9,12 @@
 [push]
     default = current
     autoSetupRemote = true
-[ssh]
-    keySecretName = GitHub
-    keySecretField = SSH Private Key
+[secrets]
+    entry = GitHub
+    privateKeyField = SSH Private Key
+    publicKeyField = SSH Public Key
+[tag]
+    gpgsign = true
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [user]
