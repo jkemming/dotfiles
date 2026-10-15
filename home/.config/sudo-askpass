@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-lab secret get "$(hostname)" "Password" || kill -KILL "$PPID"
+kgrant get "$(hostname)" "Password" || kill -KILL "$PPID"

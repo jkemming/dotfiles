@@ -8,7 +8,7 @@ function git
         return
     end
 
-    set --local secrets (lab secret get --json $entry $private_key_field $public_key_field)
+    set --local secrets (kgrant get --json $entry $private_key_field $public_key_field)
     or return
     set --local private_key (printf '%s' $secrets | jq --raw-output --arg field $private_key_field '.[$field]' | string collect)
     set --local public_key (printf '%s' $secrets | jq --raw-output --arg field $public_key_field '.[$field]')
