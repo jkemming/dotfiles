@@ -13,13 +13,13 @@ These are my dotfiles I use with Fedora and KDE Konsole.
 # Install
 
 ```shell
+mise run install
 mise install
-mise dotfiles apply --prune --yes
 ```
 
 
 # Uninstall
 
 ```shell
-mise dotfiles unapply --yes
+mise run uninstall
 ```
