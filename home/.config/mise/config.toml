@@ -3,7 +3,7 @@ MISE_FISH_AUTO_ACTIVATE = 0
 
 [tools]
 fzf = "0"
-"github:jkemming/kgrant" = "0.2.0"
+"github:jkemming/kgrant" = "0.2.1"
 gradle = "8"
 java = "temurin-21"
 jq = "1"
