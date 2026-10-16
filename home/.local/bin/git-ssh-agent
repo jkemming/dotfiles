@@ -1,0 +1,21 @@
+#!/bin/sh
+# Runs a command with an ssh-agent which holds the SSH private key from the secret store configured under `secrets.*` in
+# the git config. Falls back to running the command as is if not configured.
+# Usage: git-ssh-agent <command> [args...]
+
+entry=$(git config secrets.entry)
+private_key_field=$(git config secrets.privateKeyField)
+
+if [ -z "$entry" ] || [ -z "$private_key_field" ]; then
+    exec "$@"
+fi
+
+secrets=$(kgrant get --json "$entry" "$private_key_field") || exit
+SSH_PRIVATE_KEY=$(printf '%s' "$secrets" | jq --raw-output --arg field "$private_key_field" '.[$field]') || exit
+export SSH_PRIVATE_KEY
+
+exec ssh-agent sh -c '
+    printf "%s\n" "$SSH_PRIVATE_KEY" | ssh-add - >/dev/null 2>&1 || exit
+    unset SSH_PRIVATE_KEY
+    exec "$@"
+' sh "$@"

@@ -1,3 +1,3 @@
 function sudo
-    SUDO_ASKPASS="$HOME/.config/sudo-askpass" command sudo -EA $argv
+    SUDO_ASKPASS="$HOME/.local/bin/sudo-askpass" command sudo -EA $argv
 end
