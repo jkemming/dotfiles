@@ -1,9 +1,0 @@
-#!/bin/sh
-# Prints the SSH public key from the secret store configured under `secrets.*` in the git config (see
-# `gpg.ssh.defaultKeyCommand`).
-
-entry=$(git config secrets.entry)
-public_key_field=$(git config secrets.publicKeyField)
-
-[ -n "$entry" ] && [ -n "$public_key_field" ] || exit 1
-exec kgrant get "$entry" "$public_key_field"

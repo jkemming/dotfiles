@@ -1,12 +1,7 @@
 [commit]
     gpgsign = true
-[core]
-    sshCommand = git-ssh-agent ssh
 [gpg]
     format = ssh
-[gpg "ssh"]
-    defaultKeyCommand = git-ssh-public-key
-    program = git-ssh-keygen
 [init]
     defaultBranch = main
 [pull]
