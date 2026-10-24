@@ -1,5 +1,7 @@
 [commit]
     gpgsign = true
+[core]
+    sshCommand = ssh -i ~/.ssh/github -o IdentitiesOnly=yes
 [gpg]
     format = ssh
 [init]
@@ -9,10 +11,6 @@
 [push]
     default = current
     autoSetupRemote = true
-[secrets]
-    entry = GitHub
-    privateKeyField = SSH Private Key
-    publicKeyField = SSH Public Key
 [tag]
     gpgsign = true
 [url "git@github.com:"]
@@ -20,3 +18,4 @@
 [user]
     name = jkemming
     email = git@jkemming.com
+    signingKey = ~/.ssh/github

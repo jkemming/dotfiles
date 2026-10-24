@@ -1,4 +1,0 @@
-# Deployed straight from the build output of the `shim` crate, see the `install` task
-[dotfiles]
-"~/.local/bin/git"  = { source = "../../shim/target/release/git",  mode = "copy", permissions = "0755" }
-"~/.local/bin/sudo" = { source = "../../shim/target/release/sudo", mode = "copy", permissions = "0755" }

@@ -13,8 +13,9 @@ These are my dotfiles I use with Fedora and KDE Konsole.
 # Install
 
 ```shell
-mise install
 mise run install
+mise install
+mise run keys
 ```
 
 

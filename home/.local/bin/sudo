@@ -1,0 +1,43 @@
+#!/bin/sh
+# Shim for sudo which asks for the password via sudo-askpass instead of the terminal. Must precede the real sudo on the
+# PATH.
+
+# Find the real sudo, i.e. the first one on the PATH which isn't this script
+real_sudo=
+old_ifs=$IFS
+IFS=:
+for dir in $PATH; do
+    candidate="${dir:-.}/sudo"
+    if [ -f "$candidate" ] && [ -x "$candidate" ] && [ ! "$candidate" -ef "$0" ]; then
+        real_sudo=$candidate
+        break
+    fi
+done
+IFS=$old_ifs
+
+if [ -z "$real_sudo" ]; then
+    echo "sudo: real sudo not found on PATH" >&2
+    exit 127
+fi
+
+# Leave the password prompt alone if the caller already chose how to read it, e.g. `sudo -S` in a script
+askpass=-A
+skip_value=false
+for arg in "$@"; do
+    if $skip_value; then
+        skip_value=false
+        continue
+    fi
+    case $arg in
+        --) break ;;
+        -S|-n|-A|--stdin|--non-interactive|--askpass) askpass=; break ;;
+        -u|-g|-p|-C|-D|-R|-T|-U|-r|-t|-c|--user|--group|--prompt|--chdir|--chroot|--command-timeout) skip_value=true ;;
+        --*) ;;
+        -*[SnA]*) askpass=; break ;;
+        -*) ;;
+        *) break ;;
+    esac
+done
+
+# shellcheck disable=SC2086 # Intentionally unquoted so that an empty value expands to nothing
+SUDO_ASKPASS="$HOME/.local/libexec/sudo-askpass" exec "$real_sudo" -E $askpass "$@"
