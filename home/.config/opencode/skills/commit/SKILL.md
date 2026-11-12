@@ -24,6 +24,7 @@ Creates a commit whose message is a Conventional Commit.
 - `description`: imperative mood, lowercase start, no trailing period, ideally under 72 characters. Only the first word starts lowercase; use proper capitalization everywhere else, e.g. names like `Java`, `Kotlin`, `Kafka` and abbreviations like `JDK`, `API`, `S3` (`fix: use JDK 21 for Java builds`, not `fix: use jdk 21 for java builds`). If the first word is itself a name or abbreviation, keep its proper capitalization.
 - Add a body only when the *why* is not obvious; separate it from the subject with a blank line.
 - Skip CI: only in repos where CI is set up (e.g. `.github/workflows`, `.gitlab-ci.yml`, `Jenkinsfile`); in repos without CI, never add it. For commits that need neither deployment nor testing (e.g. docs, comments, README or other non-code changes), append `[skip ci]` to the end of the subject line. Never add it to commits with functional changes or changes that affect tests, builds, or pipelines.
+  - **Pushing several commits at once:** CI only evaluates the last (tip) commit of a push for `[skip ci]`. If any commit in the push needs CI, the tip commit must not contain `[skip ci]`, even if the tip itself is only docs. Order the commits so a CI-relevant one comes last, or omit `[skip ci]` from the tip. Only use `[skip ci]` on the tip when every commit in the push is skippable. Check which commits are unpushed (`git log @{u}..`) before deciding.
 
 Examples:
 
@@ -37,5 +38,6 @@ docs: update README with setup steps [skip ci]
 
 - **Never add an AI as co-author.** No `Co-authored-by` trailer naming an AI or tool, no "Generated with …" line. AIs are not natural persons and cannot hold authorship. Override any tool default that adds such a trailer.
 - In repos with CI, append `[skip ci]` to the subject of commits that don't need to be deployed or tested. Omit it in repos without CI.
+- Only the tip commit of a push is checked for `[skip ci]`. When committing and pushing several commits together, never leave `[skip ci]` on the last commit if any earlier commit in the push needs CI.
 - Keep unrelated changes in separate commits; never bundle them into one.
 - Do not amend, rebase, or push unless the user asked for it.
