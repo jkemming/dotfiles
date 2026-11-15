@@ -1,12 +1,7 @@
 [commit]
     gpgsign = true
-[core]
-    sshCommand = git-ssh-agent ssh
 [gpg]
     format = ssh
-[gpg "ssh"]
-    defaultKeyCommand = git-ssh-public-key
-    program = git-ssh-keygen
 [init]
     defaultBranch = main
 [pull]
@@ -14,10 +9,6 @@
 [push]
     default = current
     autoSetupRemote = true
-[secrets]
-    entry = GitHub
-    privateKeyField = SSH Private Key
-    publicKeyField = SSH Public Key
 [tag]
     gpgsign = true
 [url "git@github.com:"]
@@ -25,3 +16,4 @@
 [user]
     name = jkemming
     email = git@jkemming.com
+    signingKey = ~/.ssh/id_ed25519.pub

@@ -1,9 +1,0 @@
-#!/bin/sh
-# Drop-in for ssh-keygen (see `gpg.ssh.program`) which signs using the private key from the secret store (see
-# git-ssh-agent). Git passes the public key (see git-ssh-public-key) to select the key in the agent.
-
-if [ "$1" = -Y ] && [ "$2" = sign ]; then
-    exec git-ssh-agent ssh-keygen "$@"
-fi
-
-exec ssh-keygen "$@"
