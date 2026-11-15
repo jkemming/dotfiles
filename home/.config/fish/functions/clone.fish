@@ -21,5 +21,4 @@ function clone --description 'Clone a repository into ~/Projects/Repositories/<h
     end
 
     git clone $url $target
-    and cd $target
 end
