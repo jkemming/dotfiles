@@ -15,3 +15,7 @@
 ## Documentation
 
 - Document code and changes where reasonable, following the `documentation` skill.
+
+## Dotfiles
+
+- Files under `~/.config/opencode/` (and other config directories) are generated from `~/Projects/Repositories/github.com/jkemming/dotfiles`. Never edit them directly; edit the source in the dotfiles repository instead. See its `docs/` directory.
